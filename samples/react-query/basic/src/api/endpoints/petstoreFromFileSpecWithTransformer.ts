@@ -91,7 +91,7 @@ export const getListPetsInfiniteQueryOptions = <
     Awaited<ReturnType<typeof listPets>>,
     ListPetsParams['limit']
   >,
-  TError = ErrorType<Error>,
+  TError = ErrorType<unknown>,
 >(
   params?: ListPetsParams,
   version: number = 1,
@@ -138,7 +138,7 @@ export const getListPetsInfiniteQueryOptions = <
 export type ListPetsInfiniteQueryResult = NonNullable<
   Awaited<ReturnType<typeof listPets>>
 >;
-export type ListPetsInfiniteQueryError = ErrorType<Error>;
+export type ListPetsInfiniteQueryError = ErrorType<unknown>;
 
 /**
  * @summary List all pets
@@ -148,7 +148,7 @@ export const useListPetsInfinite = <
     Awaited<ReturnType<typeof listPets>>,
     ListPetsParams['limit']
   >,
-  TError = ErrorType<Error>,
+  TError = ErrorType<unknown>,
 >(
   params?: ListPetsParams,
   version: number = 1,
@@ -183,7 +183,7 @@ export const useListPetsInfinite = <
 
 export const getListPetsQueryOptions = <
   TData = Awaited<ReturnType<typeof listPets>>,
-  TError = ErrorType<Error>,
+  TError = ErrorType<unknown>,
 >(
   params?: ListPetsParams,
   version: number = 1,
@@ -214,14 +214,14 @@ export const getListPetsQueryOptions = <
 export type ListPetsQueryResult = NonNullable<
   Awaited<ReturnType<typeof listPets>>
 >;
-export type ListPetsQueryError = ErrorType<Error>;
+export type ListPetsQueryError = ErrorType<unknown>;
 
 /**
  * @summary List all pets
  */
 export const useListPets = <
   TData = Awaited<ReturnType<typeof listPets>>,
-  TError = ErrorType<Error>,
+  TError = ErrorType<unknown>,
 >(
   params?: ListPetsParams,
   version: number = 1,
@@ -244,7 +244,7 @@ export const useListPets = <
 
 export const getListPetsSuspenseQueryOptions = <
   TData = Awaited<ReturnType<typeof listPets>>,
-  TError = ErrorType<Error>,
+  TError = ErrorType<unknown>,
 >(
   params?: ListPetsParams,
   version: number = 1,
@@ -281,14 +281,14 @@ export const getListPetsSuspenseQueryOptions = <
 export type ListPetsSuspenseQueryResult = NonNullable<
   Awaited<ReturnType<typeof listPets>>
 >;
-export type ListPetsSuspenseQueryError = ErrorType<Error>;
+export type ListPetsSuspenseQueryError = ErrorType<unknown>;
 
 /**
  * @summary List all pets
  */
 export const useListPetsSuspense = <
   TData = Awaited<ReturnType<typeof listPets>>,
-  TError = ErrorType<Error>,
+  TError = ErrorType<unknown>,
 >(
   params?: ListPetsParams,
   version: number = 1,
@@ -323,7 +323,7 @@ export const getListPetsSuspenseInfiniteQueryOptions = <
     Awaited<ReturnType<typeof listPets>>,
     ListPetsParams['limit']
   >,
-  TError = ErrorType<Error>,
+  TError = ErrorType<unknown>,
 >(
   params?: ListPetsParams,
   version: number = 1,
@@ -370,7 +370,7 @@ export const getListPetsSuspenseInfiniteQueryOptions = <
 export type ListPetsSuspenseInfiniteQueryResult = NonNullable<
   Awaited<ReturnType<typeof listPets>>
 >;
-export type ListPetsSuspenseInfiniteQueryError = ErrorType<Error>;
+export type ListPetsSuspenseInfiniteQueryError = ErrorType<unknown>;
 
 /**
  * @summary List all pets
@@ -380,7 +380,7 @@ export const useListPetsSuspenseInfinite = <
     Awaited<ReturnType<typeof listPets>>,
     ListPetsParams['limit']
   >,
-  TError = ErrorType<Error>,
+  TError = ErrorType<unknown>,
 >(
   params?: ListPetsParams,
   version: number = 1,
